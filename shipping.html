@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Shipping and Returns policy for MM – Muskan Maison. Free shipping, easy returns, and fast refunds." />
+    <title>Shipping & Returns | MM – Muskan Maison</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">MM<span>Muskan Maison</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="philosophy.html">Brand Philosophy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="shipping.html">Shipping</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartToggle" aria-label="Open Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" style="display:none">0</span>
+                </button>
+                <button class="hamburger" id="hamburger"
+                    aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Home</a><a href="about.html">About Us</a>
+            <a href="shop.html">Shop</a><a href="philosophy.html">Brand Philosophy</a>
+            <a href="contact.html">Contact</a><a href="shipping.html">Shipping &amp; Returns</a>
+        </div>
+    </nav>
+
+    <!-- CART SIDEBAR -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Bag</h3><button class="cart-close" id="cartClose">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total"><span>Total</span><strong id="cartTotalAmt">₹0</strong></div>
+            <a href="shop.html" class="btn btn-primary" style="display:block;text-align:center;">Checkout</a>
+        </div>
+    </aside>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <div class="container">
+            <span class="section-label">Policies</span>
+            <h1>Shipping & Returns</h1>
+            <p>Transparent, fair, and designed for your peace of mind.</p>
+            <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Shipping &amp; Returns</p>
+        </div>
+    </div>
+
+    <!-- POLICIES -->
+    <section class="section">
+        <div class="container">
+            <div class="shipping-grid">
+
+                <!-- Shipping Policy -->
+                <div class="policy-card fade-in">
+                    <div class="policy-icon">🚚</div>
+                    <h3>Shipping Policy</h3>
+                    <p>We offer reliable and swift delivery across India. Every Muskan Maison order is packaged with
+                        care in our signature gift wrapping.</p>
+                    <br>
+                    <ul class="policy-list">
+                        <li>Free shipping on all orders above ₹2,999</li>
+                        <li>Standard delivery: 5–7 business days</li>
+                        <li>Express delivery: 2–3 business days (₹199 extra)</li>
+                        <li>Same-day delivery available in Bengaluru (₹299)</li>
+                        <li>Orders placed before 12pm ship the same day</li>
+                        <li>Tracking link shared via email and SMS</li>
+                    </ul>
+                </div>
+
+                <!-- Return Policy -->
+                <div class="policy-card fade-in">
+                    <div class="policy-icon">🔄</div>
+                    <h3>Return Policy</h3>
+                    <p>We want you to love your MM purchase. If you're not completely satisfied, we make returns simple
+                        and stress-free.</p>
+                    <br>
+                    <ul class="policy-list">
+                        <li>Returns accepted within 14 days of delivery</li>
+                        <li>Item must be unused and in original packaging</li>
+                        <li>Tags and dust bag must be intact</li>
+                        <li>Customised products are non-returnable</li>
+                        <li>Sale items can be exchanged but not refunded</li>
+                        <li>Free return pickup available in select cities</li>
+                    </ul>
+                </div>
+
+                <!-- Refund Policy -->
+                <div class="policy-card fade-in">
+                    <div class="policy-icon">💳</div>
+                    <h3>Refund Policy</h3>
+                    <p>Once your return is received and inspected, we process refunds swiftly to your original payment
+                        method.</p>
+                    <br>
+                    <ul class="policy-list">
+                        <li>Refund initiated within 2 business days of inspection</li>
+                        <li>UPI / Wallets: Refund in 1–2 business days</li>
+                        <li>Credit / Debit card: 5–7 business days</li>
+                        <li>Net banking: 3–5 business days</li>
+                        <li>Store credit option available for instant credit</li>
+                        <li>Exchange processed within 7–10 business days</li>
+                    </ul>
+                </div>
+
+                <!-- International Policy -->
+                <div class="policy-card fade-in">
+                    <div class="policy-icon">✈️</div>
+                    <h3>International Orders</h3>
+                    <p>We currently ship to select international destinations. Contact us to check availability for your
+                        country.</p>
+                    <br>
+                    <ul class="policy-list">
+                        <li>Available to UAE, UK, USA, Singapore, and Canada</li>
+                        <li>Delivery: 10–14 business days</li>
+                        <li>Customs duties are the responsibility of the buyer</li>
+                        <li>Minimum order value of ₹8,000 for international</li>
+                        <li>Returns on international orders: store credit only</li>
+                        <li>Email us for a shipping quote: hello@muskanmaison.in</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- REFUND TIMELINE -->
+    <section class="section" style="background:linear-gradient(135deg,var(--cream-dark) 0%,var(--cream) 100%);">
+        <div class="container" style="max-width:700px;">
+            <span class="section-label text-center" style="display:block;">How It Works</span>
+            <h2 class="section-title fade-in">Refund Timeline</h2>
+            <p class="section-subtitle fade-in">From the moment you initiate a return to the funds reaching you.</p>
+
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-day"><span>D+0</span><small>Request</small></div>
+                    <div class="timeline-info">
+                        <div>
+                            <h4>Return Requested</h4>
+                            <p>You raise a return request via email or our contact form. We confirm within 4 hours.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-day"><span>D+1</span><small>Pickup</small></div>
+                    <div class="timeline-info">
+                        <div>
+                            <h4>Pickup Scheduled</h4>
+                            <p>Our logistics partner contacts you to arrange a convenient pickup time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-day"><span>D+3</span><small>Received</small></div>
+                    <div class="timeline-info">
+                        <div>
+                            <h4>Item Received &amp; Inspected</h4>
+                            <p>We receive your return and carry out a thorough quality inspection.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-day"><span>D+5</span><small>Refund</small></div>
+                    <div class="timeline-info">
+                        <div>
+                            <h4>Refund Initiated</h4>
+                            <p>Refund is initiated to your original payment method within 2 business days of inspection.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-day"><span>D+7</span><small>Credit</small></div>
+                    <div class="timeline-info">
+                        <div>
+                            <h4>Amount Credited</h4>
+                            <p>Funds appear in your account (timeline varies by payment method).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section faq-section" id="faq">
+        <div class="container" style="max-width:760px;">
+            <span class="section-label text-center" style="display:block;">Got Questions?</span>
+            <h2 class="section-title fade-in">Frequently Asked Questions</h2>
+            <p class="section-subtitle fade-in">Everything you need to know about ordering from Muskan Maison.</p>
+
+            <div class="faq-item fade-in">
+                <button class="faq-question">
+                    Can I exchange my bag for a different colour or size?
+                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                </button>
+                <div class="faq-answer">
+                    <p class="faq-answer-inner">Yes! Exchanges are available within 14 days of delivery, subject to
+                        availability. Visit our Contact page to initiate an exchange request. Our team will guide you
+                        through the process and offer you available alternatives.</p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in">
+                <button class="faq-question">
+                    What if my bag arrives damaged or defective?
+                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                </button>
+                <div class="faq-answer">
+                    <p class="faq-answer-inner">We take extraordinary care in packaging each order. However, if your bag
+                        arrives damaged, please contact us within 48 hours of delivery with photographs. We will arrange
+                        a full replacement or refund at no charge to you.</p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in">
+                <button class="faq-question">
+                    Do you offer free shipping?
+                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                </button>
+                <div class="faq-answer">
+                    <p class="faq-answer-inner">Yes! We offer free standard shipping on all orders above ₹2,999. For
+                        orders below this value, a flat shipping fee of ₹99 applies. Express delivery is available at an
+                        additional ₹199 charge.</p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in">
+                <button class="faq-question">
+                    Can I cancel my order after placing it?
+                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                </button>
+                <div class="faq-answer">
+                    <p class="faq-answer-inner">Cancellations are accepted within 12 hours of placing the order, before
+                        it has been dispatched. Please contact us immediately via email or phone. Once dispatched,
+                        cancellations are not possible but you may initiate a return after delivery.</p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in">
+                <button class="faq-question">
+                    How do I track my order?
+                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                </button>
+                <div class="faq-answer">
+                    <p class="faq-answer-inner">Once your order is dispatched, you will receive a tracking link via
+                        email and SMS. You can also contact our support team with your order number and we'll provide a
+                        real-time update on your shipment.</p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in">
+                <button class="faq-question">
+                    Are customised products eligible for returns?
+                    <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                </button>
+                <div class="faq-answer">
+                    <p class="faq-answer-inner">Unfortunately, customised or monogrammed products are not eligible for
+                        returns or exchanges, as they are crafted specifically for you. However, if there is a
+                        manufacturing defect or quality issue, we will make it right.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>MM</h2>
+                    <p class="footer-brand-sub">Muskan Maison</p>
+                    <p>Where luxury meets purpose. Every bag tells the story of a woman who knows her worth.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="philosophy.html">Brand Philosophy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="shipping.html">Shipping &amp; Returns</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p style="font-size:0.85rem;color:rgba(245,237,227,0.65);margin-bottom:1rem;">Get early access to
+                        new collections and exclusive offers.</p>
+                    <form class="footer-newsletter newsletter-form">
+                        <input type="email" placeholder="Your email address" required />
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Muskan Maison. All Rights Reserved.</p>
+                <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="The Brand Philosophy of MM – Muskan Maison. Empowering women through design, craft, and confidence." />
+    <title>Brand Philosophy | MM – Muskan Maison</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">MM<span>Muskan Maison</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="philosophy.html">Brand Philosophy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="shipping.html">Shipping</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartToggle" aria-label="Open Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" style="display:none">0</span>
+                </button>
+                <button class="hamburger" id="hamburger"
+                    aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Home</a><a href="about.html">About Us</a>
+            <a href="shop.html">Shop</a><a href="philosophy.html">Brand Philosophy</a>
+            <a href="contact.html">Contact</a><a href="shipping.html">Shipping &amp; Returns</a>
+        </div>
+    </nav>
+
+    <!-- CART SIDEBAR -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Bag</h3><button class="cart-close" id="cartClose">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total"><span>Total</span><strong id="cartTotalAmt">₹0</strong></div>
+            <a href="shop.html" class="btn btn-primary" style="display:block;text-align:center;">Checkout</a>
+        </div>
+    </aside>
+
+    <!-- PHILOSOPHY HERO -->
+    <div class="philosophy-hero">
+        <div class="container">
+            <span class="section-label" style="color:rgba(245,237,227,0.8);">What We Believe</span>
+            <h1>Brand Philosophy</h1>
+            <p>We design for women who know themselves — and dare to be seen.</p>
+            <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Brand Philosophy</p>
+        </div>
+    </div>
+
+    <!-- EMPOWERING WOMEN -->
+    <section class="section">
+        <div class="container">
+            <span class="section-label text-center" style="display:block;">Our Core Belief</span>
+            <h2 class="section-title fade-in">Designed to Empower</h2>
+            <p class="section-subtitle fade-in">We believe that fashion is not frivolous — it is a language. And every
+                Muskan Maison bag speaks of strength, grace, and unapologetic beauty.</p>
+
+            <div class="empower-grid">
+                <div class="empower-card fade-in">
+                    <div class="empower-icon">👑</div>
+                    <h3>She Leads</h3>
+                    <p>The MM woman is not waiting to be chosen. She is in the room, she runs the room, and she carries
+                        her bag with the quiet confidence of someone who knows exactly what she is worth. Our designs
+                        reflect her leadership.</p>
+                </div>
+                <div class="empower-card fade-in">
+                    <div class="empower-icon">🌸</div>
+                    <h3>She Is Feminine — and Fierce</h3>
+                    <p>Femininity is power. Every soft curve, every delicate detail in our handbags is a celebration of
+                        womanhood — not a diminishment of it. Being feminine and being fierce are not opposites; at
+                        Muskan Maison, they are the same thing.</p>
+                </div>
+                <div class="empower-card fade-in">
+                    <div class="empower-icon">🪡</div>
+                    <h3>She Values Craft</h3>
+                    <p>Luxury is not a logo — it is the precision of a hand-stitched seam, the weight of quality
+                        leather, the satisfaction of a perfectly structured silhouette. The MM woman understands and
+                        appreciates true craftsmanship.</p>
+                </div>
+                <div class="empower-card fade-in">
+                    <div class="empower-icon">🌍</div>
+                    <h3>She Chooses Consciously</h3>
+                    <p>Our philosophy extends beyond aesthetics. We are committed to responsible sourcing, fair artisan
+                        wages, and minimal waste. The woman who carries MM knows that true luxury is built on integrity
+                        — and she would not have it any other way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIGNATURE QUOTE -->
+    <div class="quote-section">
+        <div class="container">
+            <div
+                style="font-size:3rem;color:rgba(245,237,227,0.3);font-family:Georgia,serif;line-height:1;margin-bottom:1rem;">
+                "</div>
+            <p class="quote-text">When you carry MM, you carry confidence.</p>
+            <p class="quote-author">— Muskan Maison</p>
+        </div>
+    </div>
+
+    <!-- BRAND VALUES -->
+    <section class="section" style="background:linear-gradient(135deg,var(--cream-dark) 0%,var(--cream) 100%);">
+        <div class="container">
+            <span class="section-label text-center" style="display:block;">Our Values</span>
+            <h2 class="section-title fade-in">The Pillars of Muskan Maison</h2>
+            <p class="section-subtitle fade-in">These principles guide every decision we make, from sourcing materials
+                to crafting the final stitch.</p>
+
+            <div class="values-grid">
+                <div class="value-item fade-in">
+                    <div class="value-num">01</div>
+                    <h3>Excellence</h3>
+                    <p>We accept nothing less than the finest in every aspect of our craft — from the quality of leather
+                        we choose to the artisans we partner with.</p>
+                </div>
+                <div class="value-item fade-in">
+                    <div class="value-num">02</div>
+                    <h3>Integrity</h3>
+                    <p>Our materials are ethically sourced. Our artisans are fairly compensated. Our designs are honest
+                        — luxury without deception.</p>
+                </div>
+                <div class="value-item fade-in">
+                    <div class="value-num">03</div>
+                    <h3>Timelessness</h3>
+                    <p>We do not design for trends. We design for decades. Every MM piece is built to outlast seasons
+                        and become a cherished heirloom.</p>
+                </div>
+            </div>
+
+            <div style="margin-top:4rem;" class="values-grid">
+                <div class="value-item fade-in">
+                    <div class="value-num">04</div>
+                    <h3>Empowerment</h3>
+                    <p>Every bag we create is infused with the intention to uplift the woman who carries it — reminding
+                        her of her power, her elegance, her worth.</p>
+                </div>
+                <div class="value-item fade-in">
+                    <div class="value-num">05</div>
+                    <h3>Heritage</h3>
+                    <p>We draw from the rich tapestry of Indian craft traditions — celebrating the skill and artistry
+                        passed down through generations of artisans.</p>
+                </div>
+                <div class="value-item fade-in">
+                    <div class="value-num">06</div>
+                    <h3>Accessibility</h3>
+                    <p>Luxury need not be exclusive. We strive to bring beautifully crafted, premium pieces to women
+                        across India at accessible price points.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="text-align:center;">
+        <div class="container">
+            <span class="section-label" style="display:block;text-align:center;">Ready to Begin?</span>
+            <h2 class="fade-in">Find Your MM Piece</h2>
+            <p class="fade-in" style="max-width:480px;margin:0.5rem auto 2rem;">Browse our collection and discover the
+                bag that was made for you.</p>
+            <a href="shop.html" class="btn btn-primary fade-in">Explore the Collection</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>MM</h2>
+                    <p class="footer-brand-sub">Muskan Maison</p>
+                    <p>Where luxury meets purpose. Every bag tells the story of a woman who knows her worth.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="philosophy.html">Brand Philosophy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="shipping.html">Shipping &amp; Returns</a></li>
+                        <li><a href="shipping.html#faq">FAQ</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p style="font-size:0.85rem;color:rgba(245,237,227,0.65);margin-bottom:1rem;">Get early access to
+                        new collections and exclusive offers.</p>
+                    <form class="footer-newsletter newsletter-form">
+                        <input type="email" placeholder="Your email address" required />
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Muskan Maison. All Rights Reserved.</p>
+                <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

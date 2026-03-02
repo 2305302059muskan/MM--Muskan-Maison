@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Contact MM – Muskan Maison. Get in touch with us for inquiries, orders, and collaborations." />
+    <title>Contact Us | MM – Muskan Maison</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">MM<span>Muskan Maison</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="philosophy.html">Brand Philosophy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="shipping.html">Shipping</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartToggle" aria-label="Open Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" style="display:none">0</span>
+                </button>
+                <button class="hamburger" id="hamburger"
+                    aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Home</a><a href="about.html">About Us</a>
+            <a href="shop.html">Shop</a><a href="philosophy.html">Brand Philosophy</a>
+            <a href="contact.html">Contact</a><a href="shipping.html">Shipping &amp; Returns</a>
+        </div>
+    </nav>
+
+    <!-- CART SIDEBAR -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Bag</h3><button class="cart-close" id="cartClose">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total"><span>Total</span><strong id="cartTotalAmt">₹0</strong></div>
+            <a href="shop.html" class="btn btn-primary" style="display:block;text-align:center;">Checkout</a>
+        </div>
+    </aside>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <div class="container">
+            <span class="section-label">Let's Connect</span>
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Reach out, and we'll respond with care.</p>
+            <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Contact Us</p>
+        </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Info Card -->
+                <div class="contact-info-card fade-in">
+                    <h2>Get in Touch</h2>
+                    <p>Whether it's a question about your order, a collaboration enquiry, or simply wanting to know more
+                        about MM — we are here for you.</p>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-detail-text">
+                            <label>Email</label>
+                            <span>hello@muskanmaison.in</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-detail-text">
+                            <label>Phone</label>
+                            <span>+91 98765 43210</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-detail-text">
+                            <label>Studio</label>
+                            <span>Muskan Maison Studio<br>MG Road, Bengaluru – 560001</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon"><i class="fas fa-clock"></i></div>
+                        <div class="contact-detail-text">
+                            <label>Support Hours</label>
+                            <span>Mon – Sat, 10am – 6pm IST</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links" style="margin-top:2rem;">
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrap fade-in">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+
+                    <form id="contactForm" novalidate>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" placeholder="Your full name" />
+                                <span class="error-msg" id="nameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" />
+                                <span class="error-msg" id="emailError"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject">
+                                <option value="">Select a subject…</option>
+                                <option value="order">Order Enquiry</option>
+                                <option value="product">Product Question</option>
+                                <option value="return">Return / Refund</option>
+                                <option value="collab">Collaboration</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-msg" id="subjectError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Tell us what's on your mind…"></textarea>
+                            <span class="error-msg" id="messageError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width:100%;font-size:0.9rem;">
+                            <i class="fas fa-paper-plane" style="margin-right:0.5rem;"></i>Send Message
+                        </button>
+
+                        <div class="success-msg" id="successMsg">
+                            <i class="fas fa-check-circle" style="margin-right:0.5rem;"></i>
+                            Thank you for reaching out! We'll be in touch within 24 hours.
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>MM</h2>
+                    <p class="footer-brand-sub">Muskan Maison</p>
+                    <p>Where luxury meets purpose. Every bag tells the story of a woman who knows her worth.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="philosophy.html">Brand Philosophy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="shipping.html">Shipping &amp; Returns</a></li>
+                        <li><a href="shipping.html#faq">FAQ</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p style="font-size:0.85rem;color:rgba(245,237,227,0.65);margin-bottom:1rem;">Get early access to
+                        new collections and exclusive offers.</p>
+                    <form class="footer-newsletter newsletter-form">
+                        <input type="email" placeholder="Your email address" required />
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Muskan Maison. All Rights Reserved.</p>
+                <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

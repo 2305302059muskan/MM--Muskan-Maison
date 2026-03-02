@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Learn the story behind MM – Muskan Maison. Our heritage, mission, and vision for luxury that empowers women." />
+    <title>About Us | MM – Muskan Maison</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">MM<span>Muskan Maison</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="philosophy.html">Brand Philosophy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="shipping.html">Shipping</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartToggle" aria-label="Open Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" style="display:none">0</span>
+                </button>
+                <button class="hamburger" id="hamburger"
+                    aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Home</a><a href="about.html">About Us</a>
+            <a href="shop.html">Shop</a><a href="philosophy.html">Brand Philosophy</a>
+            <a href="contact.html">Contact</a><a href="shipping.html">Shipping &amp; Returns</a>
+        </div>
+    </nav>
+
+    <!-- CART SIDEBAR -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Bag</h3><button class="cart-close" id="cartClose">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total"><span>Total</span><strong id="cartTotalAmt">₹0</strong></div>
+            <a href="shop.html" class="btn btn-primary" style="display:block;text-align:center;">Checkout</a>
+        </div>
+    </aside>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <div class="container">
+            <span class="section-label">Our Heritage</span>
+            <h1>About Muskan Maison</h1>
+            <p>The story of a name. A legacy. A dream.</p>
+            <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; About Us</p>
+        </div>
+    </div>
+
+    <!-- BRAND STORY -->
+    <section class="section">
+        <div class="container">
+            <div class="about-block fade-in">
+                <div class="about-img">
+                    <img src="images/bag_satchel.png" alt="MM brand story" />
+                </div>
+                <div class="about-text">
+                    <span class="section-label">Our Story</span>
+                    <h2>Born from a Dream of Elegance</h2>
+                    <p>Muskan Maison was founded in 2022 with a singular belief — that every woman deserves to carry
+                        beauty on her arm. What began as a passion project by designer Muskan became a movement
+                        celebrating feminine strength and grace.</p>
+                    <p>Rooted in the rich craft traditions of India, each Muskan Maison creation is a tribute to the
+                        skilled artisans whose hands shape leather into art. We bridge the worlds of heritage craft and
+                        modern luxury with every stitch.</p>
+                    <p>Our journey began in a small studio, armed with nothing but a vision and an unwavering commitment
+                        to quality. Today, MM is worn by women across India who believe that elegance is not just an
+                        aesthetic — it is an attitude.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAISON MEANING -->
+    <section class="section" style="background:linear-gradient(135deg,var(--cream-dark) 0%,var(--cream) 100%);">
+        <div class="container">
+            <div class="about-block reverse fade-in">
+                <div class="about-img">
+                    <img src="images/bag_tote.png" alt="MM monogram meaning" />
+                </div>
+                <div class="about-text">
+                    <span class="section-label">The Name</span>
+                    <h2>What Does <em style="font-style:italic;color:var(--mocha);">"Maison"</em> Mean?</h2>
+                    <p><em>Maison</em> is the French word for "house" — but in the world of fashion, it signifies
+                        something far greater. A <em>Maison</em> is a house of excellence, a sanctuary of artistry and
+                        refined taste. It evokes the storied ateliers of Paris where fashion is elevated to fine art.
+                    </p>
+                    <p>By naming our brand Muskan Maison, we declare our intent: to build a house of luxury that carries
+                        our founder's spirit — warm, confident, and beautifully crafted — into every woman's life.</p>
+
+                    <div
+                        style="margin-top:2rem;padding:1.5rem;background:var(--white);border-radius:var(--radius-lg);border-left:4px solid var(--mocha);box-shadow:var(--shadow);">
+                        <h3 style="font-size:1.1rem;margin-bottom:0.5rem;">The MM Monogram</h3>
+                        <p style="font-size:0.9rem;">Two bold letters. One powerful identity. The <strong>MM</strong>
+                            monogram is more than a logo — it is a mark of membership in a community of women who choose
+                            excellence. Minimal in form, infinite in meaning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISSION & VISION -->
+    <section class="section">
+        <div class="container">
+            <span class="section-label text-center" style="display:block;">Our Purpose</span>
+            <h2 class="section-title fade-in">Mission & Vision</h2>
+            <p class="section-subtitle fade-in">The values that guide every stitch, every design, every decision at
+                Muskan Maison.</p>
+
+            <div class="mission-grid">
+                <div class="mission-card fade-in">
+                    <span class="section-label">Mission</span>
+                    <h3>To Craft Confidence</h3>
+                    <p>Our mission is to create luxury handbags that empower women to walk into every room with
+                        confidence and grace. We believe that when you carry a bag crafted with love and precision, you
+                        carry a piece of art — and a piece of yourself.</p>
+                    <p style="margin-top:0.75rem;">We are committed to ethical sourcing, artisan welfare, and
+                        sustainable practices — because true luxury must be responsible.</p>
+                </div>
+                <div class="mission-card fade-in">
+                    <span class="section-label">Vision</span>
+                    <h3>To Redefine Indian Luxury</h3>
+                    <p>Our vision is to place Muskan Maison on the global map of luxury fashion — as a proudly Indian
+                        brand that rivals the finest European houses in craftsmanship, creativity, and character.</p>
+                    <p style="margin-top:0.75rem;">We envision a world where Indian craftsmanship is celebrated,
+                        artisans are valued, and every woman — regardless of where she is — can access beauty that
+                        speaks to her soul.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>MM</h2>
+                    <p class="footer-brand-sub">Muskan Maison</p>
+                    <p>Where luxury meets purpose. Every bag tells the story of a woman who knows her worth.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="philosophy.html">Brand Philosophy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="shipping.html">Shipping & Returns</a></li>
+                        <li><a href="shipping.html#faq">FAQ</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p style="font-size:0.85rem;color:rgba(245,237,227,0.65);margin-bottom:1rem;">Get early access to
+                        new collections and exclusive offers.</p>
+                    <form class="footer-newsletter newsletter-form">
+                        <input type="email" placeholder="Your email address" required />
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Muskan Maison. All Rights Reserved.</p>
+                <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

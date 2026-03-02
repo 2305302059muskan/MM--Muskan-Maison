@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Shop MM – Muskan Maison luxury handbags. Totes, clutches, satchels and more. Handcrafted in India." />
+    <title>Shop | MM – Muskan Maison</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">MM<span>Muskan Maison</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="philosophy.html">Brand Philosophy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="shipping.html">Shipping</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartToggle" aria-label="Open Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" style="display:none">0</span>
+                </button>
+                <button class="hamburger" id="hamburger"
+                    aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Home</a><a href="about.html">About Us</a>
+            <a href="shop.html">Shop</a><a href="philosophy.html">Brand Philosophy</a>
+            <a href="contact.html">Contact</a><a href="shipping.html">Shipping &amp; Returns</a>
+        </div>
+    </nav>
+
+    <!-- CART SIDEBAR -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Bag</h3><button class="cart-close" id="cartClose">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total"><span>Total</span><strong id="cartTotalAmt">₹0</strong></div>
+            <a href="#" class="btn btn-primary" style="display:block;text-align:center;">Checkout</a>
+        </div>
+    </aside>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <div class="container">
+            <span class="section-label">The Collection</span>
+            <h1>Shop Our Bags</h1>
+            <p>Every piece, a quiet luxury. Every style, a bold statement.</p>
+            <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Shop</p>
+        </div>
+    </div>
+
+    <!-- SHOP SECTION -->
+    <section class="section">
+        <div class="container">
+
+            <!-- Filters + Count -->
+            <div class="shop-controls">
+                <div class="shop-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="tote">Totes</button>
+                    <button class="filter-btn" data-filter="clutch">Clutches</button>
+                    <button class="filter-btn" data-filter="crossbody">Crossbody</button>
+                    <button class="filter-btn" data-filter="satchel">Satchels</button>
+                    <button class="filter-btn" data-filter="mini">Mini Bags</button>
+                </div>
+                <span class="shop-count" id="shopCount">Showing 6 products</span>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="shop-grid">
+
+                <!-- 1. Maison Tote -->
+                <div class="product-card fade-in" data-category="tote">
+                    <div class="product-img-wrap">
+                        <span class="product-badge">Bestseller</span>
+                        <img src="images/bag_tote.png" alt="The Maison Tote" />
+                        <button class="product-wishlist" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3>The Maison Tote</h3>
+                        <p class="product-desc">Structured caramel leather tote with gold hardware. Spacious enough for
+                            your world, elegant enough for every occasion.</p>
+                        <div class="product-price">₹8,499 <del>₹11,000</del></div>
+                        <button class="btn btn-primary"
+                            onclick="addToCart('tote','The Maison Tote',8499,'images/bag_tote.png')">Add to
+                            Cart</button>
+                    </div>
+                </div>
+
+                <!-- 2. Ivory Clutch -->
+                <div class="product-card fade-in" data-category="clutch">
+                    <div class="product-img-wrap">
+                        <span class="product-badge">New</span>
+                        <img src="images/bag_clutch.png" alt="Ivory Evening Clutch" />
+                        <button class="product-wishlist" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ivory Evening Clutch</h3>
+                        <p class="product-desc">Quilted ivory leather with delicate gold chain. The ultimate evening
+                            companion for the woman who dresses with intention.</p>
+                        <div class="product-price">₹5,299 <del>₹7,000</del></div>
+                        <button class="btn btn-primary"
+                            onclick="addToCart('clutch','Ivory Evening Clutch',5299,'images/bag_clutch.png')">Add to
+                            Cart</button>
+                    </div>
+                </div>
+
+                <!-- 3. Saddle Crossbody -->
+                <div class="product-card fade-in" data-category="crossbody">
+                    <div class="product-img-wrap">
+                        <img src="images/bag_crossbody.png" alt="Tan Saddle Crossbody" />
+                        <button class="product-wishlist" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Tan Saddle Crossbody</h3>
+                        <p class="product-desc">Vintage-inspired saddle bag with an adjustable strap. Rich tan leather
+                            that grows more beautiful with age.</p>
+                        <div class="product-price">₹6,799</div>
+                        <button class="btn btn-primary"
+                            onclick="addToCart('crossbody','Tan Saddle Crossbody',6799,'images/bag_crossbody.png')">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+                <!-- 4. Mocha Satchel -->
+                <div class="product-card fade-in" data-category="satchel">
+                    <div class="product-img-wrap">
+                        <span class="product-badge">Limited</span>
+                        <img src="images/bag_satchel.png" alt="Mocha Structured Satchel" />
+                        <button class="product-wishlist" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mocha Structured Satchel</h3>
+                        <p class="product-desc">Deep mocha leather with a polished gold clasp and double top handles.
+                            For the woman who leads with grace.</p>
+                        <div class="product-price">₹9,299 <del>₹12,500</del></div>
+                        <button class="btn btn-primary"
+                            onclick="addToCart('satchel','Mocha Structured Satchel',9299,'images/bag_satchel.png')">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+                <!-- 5. Mini Bucket -->
+                <div class="product-card fade-in" data-category="mini">
+                    <div class="product-img-wrap">
+                        <img src="images/bag_mini.png" alt="Blush Mini Bucket Bag" />
+                        <button class="product-wishlist" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Blush Mini Bucket Bag</h3>
+                        <p class="product-desc">A soft blush bucket bag with a cinched drawstring and golden chain.
+                            Petite yet perfectly curated.</p>
+                        <div class="product-price">₹4,799</div>
+                        <button class="btn btn-primary"
+                            onclick="addToCart('mini','Blush Mini Bucket Bag',4799,'images/bag_mini.png')">Add to
+                            Cart</button>
+                    </div>
+                </div>
+
+                <!-- 6. Hero Signature Bag -->
+                <div class="product-card fade-in" data-category="tote">
+                    <div class="product-img-wrap">
+                        <span class="product-badge">Signature</span>
+                        <img src="images/hero_handbag.png" alt="MM Signature Top Handle" />
+                        <button class="product-wishlist" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3>MM Signature Top Handle</h3>
+                        <p class="product-desc">The original. A structured top-handle in beige and cognac with iconic MM
+                            brass hardware. A forever piece.</p>
+                        <div class="product-price">₹12,999 <del>₹16,000</del></div>
+                        <button class="btn btn-primary"
+                            onclick="addToCart('signature','MM Signature Top Handle',12999,'images/hero_handbag.png')">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>MM</h2>
+                    <p class="footer-brand-sub">Muskan Maison</p>
+                    <p>Where luxury meets purpose. Every bag tells the story of a woman who knows her worth.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="philosophy.html">Brand Philosophy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="shipping.html">Shipping &amp; Returns</a></li>
+                        <li><a href="shipping.html#faq">FAQ</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p style="font-size:0.85rem;color:rgba(245,237,227,0.65);margin-bottom:1rem;">Get early access to
+                        new collections and exclusive offers.</p>
+                    <form class="footer-newsletter newsletter-form">
+                        <input type="email" placeholder="Your email address" required />
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Muskan Maison. All Rights Reserved.</p>
+                <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
